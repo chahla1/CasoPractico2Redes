@@ -1,4 +1,8 @@
 # CasoPractico2Redes
+
+https://github.com/chahla1/CasoPractico2Redes.git
+
+
 #OSI/TCP‑IP
 
 El modelo OSI tiene 7 capas (Física, Enlace de datos, Red, Transporte, Sesión, Presentación y Aplicación).
