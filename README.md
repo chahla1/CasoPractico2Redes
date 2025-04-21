@@ -26,6 +26,7 @@ Total de direcciones: 2^32-2^22 = 2^10 = 1024
 host por subred= 1024 - 2 = 1022
 
 #Capa de Transporte
+
 Se decide el uso de TCP para la transferencia de archivos debido a que el TCP ofrece control de flujo, control de errores y retransmisión en caso de pérdida, lo cual es esencial para archivos grandes donde la integridad es fundamental.
 Se decide el uso de  UDP para el streaming multimedia debido a que el UDP es más rápido, con menos sobrecarga. En streaming, una pequeña pérdida de paquetes no es crítica, por lo que se prioriza la fluidez y latencia baja sobre la exactitud.
 
@@ -35,3 +36,21 @@ Ancho de banda = 10 Mbps (10 × 10⁶ bps).
 MSS = 1460 bytes
 Tamaño = 500,000bytes
 num segmentos= 500,000/1460 = 342.47
+
+#Capa de Aplicacion
+
+FTP/SFTP para transferencias de archivos.
+HTTP/HTTPS para streaming multimedia.
+DNS para resolver nombres de dominio.
+
+La multiplexacion explica cómo los servidores gestionan múltiples conexiones simultáneas utilizando técnicas como puertos y hilos.
+DASH (Dynamic Adaptive Streaming over HTTP): Describe cómo ajusta la calidad del video en función del ancho de banda disponible.
+
+#Capa de Seguridad
+
+VPN: Configura VPNs para segmentos remotos.
+Firewalls (ACLs): Define reglas para permitir o bloquear tráfico.
+Cifrado:
+Simétrico: AES para velocidad.
+Asimétrico: RSA para intercambio seguro de claves.
+DNSSEC: Configura firmas digitales para proteger las respuestas de DNS.
